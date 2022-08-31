@@ -197,7 +197,7 @@ void allTraversals(TreeNode* root) {
          cur.second++;
          st.push(cur);
 
-         if (cur.first->left != NULL) st.push(cur.first->left);
+         if (cur.first->left != NULL) st.push({cur.first->left, 1});
       }
       // in
       else if (cur.second == 2) {
